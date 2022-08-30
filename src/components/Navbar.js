@@ -1,5 +1,6 @@
 import { Disclosure } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
+import VimonsaIcon from '../assets/logo/icon.svg'
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -34,12 +35,12 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500"
+                    src={VimonsaIcon}
                     alt="Workflow"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=500"
+                    src={VimonsaIcon}
                     alt="Workflow"
                   />
                 </div>
