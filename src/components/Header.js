@@ -1,4 +1,5 @@
 import ImgHeader from "../assets/images/header.jpg"
+import VimonsaLogo from "../assets/logo/logo.svg"
 
 export default function Header() {
   return (
@@ -15,12 +16,19 @@ export default function Header() {
             <polygon points="50,0 100,0 50,100 0,100" />
           </svg>
 
+          <div className="relative px-4 pt-1 sm:px-6 lg:px-8" />
+
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Data to enrich your</span>{" "}
-                <span className="block text-indigo-600 xl:inline">
-                  online business
+              <img src={VimonsaLogo} alt="Vimonsa" className="mb-6" />
+              <h1 className="text-4xl font-bold tracking-tighter text-gray-900 sm:text-5xl md:text-6xl">
+                {/* <span className="inline">Soporte, innovación y soluciones</span>{" "}
+                <span className="inline text-indigo-600">
+                  para la industria maquiladora
+                </span> */}
+                <span className="inline">Support, innovation and solutions</span>{" "}
+                <span className="inline text-indigo-600">
+                  for the machining industry
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
