@@ -1,7 +1,10 @@
 import ImgHeader from "../assets/images/header.jpg"
 import VimonsaLogo from "../assets/logo/logo.svg"
+import { useTranslation } from "react-i18next"
 
 export default function Header() {
+  const { t } = useTranslation()
+
   return (
     <div className="relative overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl">
@@ -17,19 +20,12 @@ export default function Header() {
           </svg>
 
           <div className="relative px-4 pt-1 sm:px-6 lg:px-8" />
-
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <img src={VimonsaLogo} alt="Vimonsa" className="mb-6" />
               <h1 className="text-4xl font-bold tracking-tighter text-gray-900 sm:text-5xl md:text-6xl">
-                {/* <span className="inline">Soporte, innovación y soluciones</span>{" "}
-                <span className="inline text-indigo-600">
-                  para la industria maquiladora
-                </span> */}
-                <span className="inline">Support, innovation and solutions</span>{" "}
-                <span className="inline text-indigo-600">
-                  for the machining industry
-                </span>
+                <span className="inline">{t("headline-1")}</span>{" "}
+                <span className="inline text-[#27B2D4]">{t("headline-2")}</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
