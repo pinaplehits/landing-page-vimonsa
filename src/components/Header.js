@@ -3,7 +3,7 @@ import VimonsaLogo from "../assets/logo/logo.svg"
 import { useTranslation } from "react-i18next"
 
 export default function Header() {
-  const { t } = useTranslation()
+  const { t } = useTranslation(null, { keyPrefix: "Header_lang" })
 
   return (
     <div className="relative overflow-hidden bg-white">
