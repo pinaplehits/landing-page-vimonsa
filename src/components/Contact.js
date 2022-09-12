@@ -56,13 +56,13 @@ export default function Contact() {
   }
 
   return (
-    <>
+    <div className="bg-stone-100 py-6">
       <div className="max-w-5xl mt-10 mx-auto sm:mt-0">
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="mt-5 md:col-span-2 md:mt-0">
-            <form onSubmit={handleSubmit}>
-              <div className="overflow-hidden shadow sm:rounded-md">
-                <div className="bg-stone-100 px-4 py-5 sm:p-6">
+            <form className="border-2 rounded-lg" onSubmit={handleSubmit}>
+              <div className="overflow-hidden lg:shadow-2xl shadow-[#6E949A]/60">
+                <div className="px-4 py-5 sm:p-6">
                   <div className="grid grid-cols-6 gap-6">
                     <div className="col-span-6 sm:col-span-3">
                       <label
@@ -139,7 +139,7 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                <div className="px-4 py-3 text-right sm:px-6 border-t-2">
                   <button
                     type="submit"
                     className="inline-flex justify-center rounded-md border border-transparent bg-[hsla(192,69%,49%,0.9)] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[hsla(192,69%,49%,1)] focus:outline-none focus:ring-4 focus:ring-[hsla(192,69%,49%,0.5)]"
@@ -150,7 +150,7 @@ export default function Contact() {
               </div>
             </form>
           </div>
-          <div className="md:col-span-1 mt-8">
+          <div className="md:col-span-1 mt-8 lg:ml-8">
             <div className="text-center text-xl font-medium mb-5 text-gray-900">
               {t("Info.contact-info")}
             </div>
@@ -290,6 +290,6 @@ export default function Contact() {
           </div>
         </Dialog>
       </Transition>
-    </>
+    </div>
   )
 }
