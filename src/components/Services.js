@@ -65,7 +65,7 @@ export default function Services() {
     <div className="bg-stone-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl pt-4 pb-10 lg:max-w-none ">
-          <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
+          <h2 className="text-2xl font-bold text-gray-900">{t("title")}</h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {services.map((service) => (
