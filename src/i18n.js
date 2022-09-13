@@ -47,7 +47,7 @@ const resources = {
         "cmm-name": "Coordinate measuring machine",
         "duns-description":
           "We are certified under the DUNS standard, which allows us to act as a trustworthy business partner in the market.",
-        "duns-name": "DUNS certification",
+        "duns-name": "DUNS number",
         "employees-description":
           "We have a team of highly trained engineers to carry out the design of parts and the development of machining programs. We also have a team of highly trained machinists to manufacture the parts you need.",
         "employees-name": "Our team",
@@ -141,7 +141,7 @@ const resources = {
         "cmm-name": "Máquina de medición por coordenadas",
         "duns-description":
           "Estamos certificados bajo la norma DUNS, lo que nos permite actuar como un socio de negocios confiable en el mercado.",
-        "duns-name": "Certificación DUNS",
+        "duns-name": "Número DUNS",
         "employees-description":
           "Contamos con un equipo de ingenieros altamente capacitados para realizar el diseño de piezas y el desarrollo de programas de mecanizado. También contamos con un equipo de maquinistas altamente capacitados para fabricar las piezas que necesites.",
         "employees-name": "Nuestro equipo",
