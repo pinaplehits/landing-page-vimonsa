@@ -62,7 +62,6 @@ export default function Features() {
               <div key={feature.name} className="relative">
                 <dt>
                   <div className="absolute flex h-14 w-14 items-center justify-center rounded-md bg-indigo-600 text-white">
-                    {/* <feature.icon className="h-9 w-9" aria-hidden="true" /> */}
                     <img
                       src={feature.icon}
                       alt={feature.name}

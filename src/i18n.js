@@ -10,7 +10,8 @@ const resources = {
         item3: "Commitment",
         item4: "Client Satisfaction",
         item5: "Vanguard",
-        item6: "Innovation"
+        item6: "Innovation",
+        title: "Why Choose Us?"
       },
       Contact_lang: {
         ErrorModal: {},
@@ -56,7 +57,9 @@ const resources = {
         "molding-description":
           "We have a molding department to manufacture plastic parts. We have a wide variety of materials and colors to manufacture the parts you need.",
         "molding-name": "Molding",
-        section: "Overview"
+        section: "Overview",
+        title: "Our features and services that make us stand out",
+        description: "We offer a wide variety of services and features."
       },
       Footer_lang: {
         "footer-text": "All Rights Reserved."
@@ -101,7 +104,8 @@ const resources = {
         item3: "Compromiso",
         item4: "Satisfacción del cliente",
         item5: "Vanguardia",
-        item6: "Innovación"
+        item6: "Innovación",
+        title: "¿Por qué elegirnos?"
       },
       Contact_lang: {
         ErrorModal: {},
@@ -147,7 +151,10 @@ const resources = {
         "molding-description":
           "En nuestro departmento de inyección de plásticos fabricamos piezas de gran complejidad. Contamos con una amplia variedad de materiales y colores para fabricar las piezas que necesites.",
         "molding-name": "Inyección de plásticos",
-        section: "Conócenos"
+        section: "Conócenos",
+        title: "Nuestras características y servicios que nos hacen destacar",
+        description:
+          "Ofrecemos una amplia variedad de servicios y características."
       },
       Footer_lang: {
         "footer-text": "Todos los derechos reservados."
