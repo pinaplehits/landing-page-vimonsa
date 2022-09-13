@@ -179,12 +179,12 @@ export default function Contact() {
                 </span>
                 <span>
                   <a
-                    href="https://goo.gl/maps/iijVP5itVTN9WwoW8"
+                    href="https://goo.gl/maps/ZAq1Cm2KseLHFzfVA"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-gray-600 hover:text-[#27B2D4]"
                   >
-                    Rojas Drive 12112, El Paso, Texas
+                    6070 Gateway Blvd E Ste 106, El Paso, TX 79905
                   </a>
                 </span>
               </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                   (656) 891-9311
                 </a>
               </span>
-              <div className="mt-1 text-sm text-gray-600">
+              {/* <div className="mt-1 text-sm text-gray-600">
                 {t("Info.country-usa")}
                 <a
                   href="tel:+19153525826"
@@ -212,7 +212,7 @@ export default function Contact() {
                 >
                   (915) 352-5826
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="px-4 sm:px-0 mt-4">
               <h3 className="text-lg font-medium leading-6 text-gray-900">
