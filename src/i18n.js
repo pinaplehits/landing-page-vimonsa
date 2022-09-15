@@ -143,13 +143,13 @@ const resources = {
           "Estamos certificados bajo la norma DUNS, lo que nos permite actuar como un socio de negocios confiable en el mercado.",
         "duns-name": "Número DUNS",
         "employees-description":
-          "Contamos con un equipo de ingenieros altamente capacitados para realizar el diseño de piezas y el desarrollo de programas de mecanizado. También contamos con un equipo de maquinistas altamente capacitados para fabricar las piezas que necesites.",
+          "Contamos con un equipo de ingenieros altamente capacitados para realizar el diseño de piezas y el desarrollo de programas de mecanizado. También contamos con un equipo de herramentistas altamente capacitados para fabricar las piezas que necesites.",
         "employees-name": "Nuestro equipo",
         "iso9001-description":
           "Estamos certificados bajo la norma ISO 9001:2015 por la empresa SPG, lo que nos permite ofrecer un servicio de calidad y confianza.",
         "iso9001-name": "Certificación ISO 9001",
         "molding-description":
-          "En nuestro departmento de inyección de plásticos fabricamos piezas de gran complejidad. Contamos con una amplia variedad de materiales y colores para fabricar las piezas que necesites.",
+          "En nuestro departamento de inyección de plásticos fabricamos piezas de gran complejidad. Contamos con una amplia variedad de materiales y colores para fabricar las piezas que necesites.",
         "molding-name": "Inyección de plásticos",
         section: "Conócenos",
         title: "Nuestras características y servicios que nos hacen destacar",
@@ -161,7 +161,7 @@ const resources = {
       },
       Header_lang: {
         description:
-          "Somos una empresa dedicada a la fabricación de piezas y componentes para el maquinado y moldeo por inyección, contamos con la mejor tecnología y el mejor equipo para ofrecerte el mejor servicio.",
+          "Somos una empresa dedicada a la fabricación de piezas, componentes para el maquinado y moldeo por inyección, contamos con la mejor tecnología y el mejor equipo para ofrecerte el mejor servicio.",
         "headline-1": "Soporte, innovación y soluciones",
         "headline-2": "para la industria maquiladora"
       },
