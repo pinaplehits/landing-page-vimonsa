@@ -43,7 +43,7 @@ export default function Features() {
   ]
 
   return (
-    <div id="Overview" className="bg-stone-100 py-12">
+    <div id="Overview" className="bg-stone-100 py-12 scroll-mt-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-lg font-semibold text-indigo-600">
