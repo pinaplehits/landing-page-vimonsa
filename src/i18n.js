@@ -77,8 +77,8 @@ const resources = {
         },
         "nav-item-1": "Home",
         "nav-item-2": "Overview",
-        "nav-item-3": "About us",
-        "nav-item-4": "Services",
+        "nav-item-3": "Services",
+        "nav-item-4": "About Us",
         "nav-item-5": "Contact"
       },
       Services_lang: {
@@ -172,8 +172,8 @@ const resources = {
         },
         "nav-item-1": "Inicio",
         "nav-item-2": "Conócenos",
-        "nav-item-3": "Nosotros",
-        "nav-item-4": "Servicios",
+        "nav-item-3": "Servicios",
+        "nav-item-4": "Nosotros",
         "nav-item-5": "Contacto"
       },
       Services_lang: {
