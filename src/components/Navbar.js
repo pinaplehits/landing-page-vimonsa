@@ -23,16 +23,6 @@ export default function Navbar() {
     { name: t("nav-item-5"), href: "#Contact", current: false }
   ]
 
-  function handleClick(e) {
-    navigation.forEach((item) => {
-      if (item.current === false) {
-        item.current = true
-      }
-    })
-
-    console.log(navigation)
-  }
-
   return (
     <Disclosure as="nav" className="sticky top-0 z-20 bg-gray-800">
       {({ open }) => (
@@ -69,7 +59,6 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        id={item.name}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -77,7 +66,6 @@ export default function Navbar() {
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
-                        onClick={handleClick}
                       >
                         {item.name}
                       </a>
