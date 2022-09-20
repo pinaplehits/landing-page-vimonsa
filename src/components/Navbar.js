@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon, GlobeAltIcon } from "@heroicons/react/24/outline"
 import { useTranslation } from "react-i18next"
 import VimonsaLogo from "../assets/logo/logo.svg"
+import { US, MX } from "country-flag-icons/react/3x2"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -102,6 +103,10 @@ export default function Navbar() {
                               "block px-4 py-2 text-sm text-gray-700 w-full text-start"
                             )}
                           >
+                            <US
+                              title="United States"
+                              className="w-7 inline-block mr-2"
+                            />
                             {t("Language_lang.english")}
                           </button>
                         )}
@@ -116,6 +121,10 @@ export default function Navbar() {
                               "block px-4 py-2 text-sm text-gray-700 w-full text-start"
                             )}
                           >
+                            <MX
+                              title="Mexico"
+                              className="w-7 inline-block mr-2"
+                            />
                             {t("Language_lang.spanish")}
                           </button>
                         )}
