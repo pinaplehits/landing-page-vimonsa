@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon, GlobeAltIcon } from "@heroicons/react/24/outline"
 import { useTranslation } from "react-i18next"
 import VimonsaLogo from "../assets/logo/logo.svg"
 import { US, MX } from "country-flag-icons/react/3x2"
+import { useState } from "react"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ")
@@ -16,13 +17,13 @@ export default function Navbar() {
     i18n.changeLanguage(e.target.value)
   }
 
-  const navigation = [
+  const [navigation, setNavigation] = useState([
     { name: t("nav-item-1"), href: "#", current: true },
     { name: t("nav-item-2"), href: "#Overview", current: false },
     { name: t("nav-item-3"), href: "#Services", current: false },
     { name: t("nav-item-4"), href: "#About-Us", current: false },
     { name: t("nav-item-5"), href: "#Contact", current: false }
-  ]
+  ])
 
   return (
     <Disclosure as="nav" className="sticky top-0 z-20 bg-gray-800">
@@ -60,6 +61,22 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={() => {
+                          setNavigation(
+                            navigation.map((nav) => {
+                              if (nav.name === item.name) {
+                                nav.current = true
+                              }
+
+                              if (nav.name !== item.name) {
+                                nav.current = false
+                              }
+                              return nav
+                            })
+                          )
+                          console.clear()
+                          console.log(navigation)
+                        }}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
