@@ -74,8 +74,6 @@ export default function Navbar() {
                               return nav
                             })
                           )
-                          console.clear()
-                          console.log(navigation)
                         }}
                         className={classNames(
                           item.current
