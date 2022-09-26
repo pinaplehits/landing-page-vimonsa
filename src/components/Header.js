@@ -1,12 +1,43 @@
 import ImgHeader from "../assets/images/header.jpg"
 import VimonsaLogo from "../assets/logo/logo.svg"
 import { useTranslation } from "react-i18next"
+import { useEffect, useRef } from "react"
 
 export default function Header() {
   const { t } = useTranslation(null, { keyPrefix: "Header_lang" })
 
+  const myRef = useRef()
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       const entry = entries[0]
+  //       if (entry.isIntersecting) {
+  //         console.log(entry.target.id, entry.isIntersecting)
+
+  //         //   document.getElementById("Header").classList.remove("text-gray-300")
+  //         //   document
+  //         //     .getElementById("Header")
+  //         //     .classList.remove("hover:bg-gray-700")
+  //         //   document.getElementById("Header").classList.remove("hover:text-white")
+
+  //         //   document.getElementById("Header").classList.add("bg-gray-900")
+  //         //   document.getElementById("Header").classList.add("text-white")
+  //         // } else {
+  //         //   document.getElementById("Header").classList.remove("bg-gray-900")
+  //         //   document.getElementById("Header").classList.remove("text-white")
+
+  //         //   document.getElementById("Header").classList.add("text-gray-300")
+  //         //   document.getElementById("Header").classList.add("hover:bg-gray-700")
+  //         //   document.getElementById("Header").classList.add("hover:text-white")
+  //       }
+  //     }
+  //     // { threshold: 0.75, rootMargin: "0px 0px 50% 0px" }
+  //   )
+  //   observer.observe(myRef.current)
+  // }, [])
+
   return (
-    <section id="Header" className="relative overflow-hidden bg-white">
+    <section ref={myRef} className="relative overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 bg-white pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
           <svg

@@ -5,6 +5,7 @@ import InjectionLogo from "../assets/icon/injection-machine.svg"
 import CmmLogo from "../assets/icon/cmm.svg"
 import DunsLogo from "../assets/icon/duns1.svg"
 import TeamLogo from "../assets/icon/team.svg"
+import { useEffect, useRef } from "react"
 
 export default function Features() {
   const { t } = useTranslation(null, { keyPrefix: "Features_lang" })
@@ -42,8 +43,43 @@ export default function Features() {
     }
   ]
 
+  const myRef = useRef()
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       const entry = entries[0]
+  //       if (entry.isIntersecting) {
+  //         console.log(entry.target.id, entry.isIntersecting)
+
+  //         //   document.getElementById("Overview").classList.remove("text-gray-300")
+  //         //   document
+  //         //     .getElementById("Overview")
+  //         //     .classList.remove("hover:bg-gray-700")
+  //         //   document
+  //         //     .getElementById("Overview")
+  //         //     .classList.remove("hover:text-white")
+  //         //   document.getElementById("Overview").classList.add("bg-gray-900")
+  //         //   document.getElementById("Overview").classList.add("text-white")
+  //         // } else {
+  //         //   document.getElementById("Overview").classList.remove("bg-gray-900")
+  //         //   document.getElementById("Overview").classList.remove("text-white")
+
+  //         //   document.getElementById("Overview").classList.add("text-gray-300")
+  //         //   document.getElementById("Overview").classList.add("hover:bg-gray-700")
+  //         //   document.getElementById("Overview").classList.add("hover:text-white")
+  //       }
+  //     }
+  //     // { threshold: 0.75, rootMargin: "0px 0px 50% 0px" }
+  //   )
+  //   observer.observe(myRef.current)
+  // }, [])
+
   return (
-    <section id="Overview" className="bg-stone-100 py-12 scroll-mt-10">
+    <section
+      ref={myRef}
+      id="Overview"
+      className="bg-stone-100 py-12 scroll-mt-10"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-lg font-semibold text-indigo-600">

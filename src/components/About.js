@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react"
 import { useTranslation } from "react-i18next"
 
 export default function About() {
@@ -30,8 +31,44 @@ export default function About() {
     }
   ]
 
+  const myRef = useRef()
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       const entry = entries[0]
+  //       if (entry.isIntersecting) {
+  //         console.log(entry.target.id, entry.isIntersecting)
+
+  //         //   document.getElementById("About-Us").classList.remove("text-gray-300")
+  //         //   document
+  //         //     .getElementById("About-Us")
+  //         //     .classList.remove("hover:bg-gray-700")
+  //         //   document
+  //         //     .getElementById("About-Us")
+  //         //     .classList.remove("hover:text-white")
+
+  //         //   document.getElementById("About-Us").classList.add("bg-gray-900")
+  //         //   document.getElementById("About-Us").classList.add("text-white")
+  //         // } else {
+  //         //   document.getElementById("About-Us").classList.remove("bg-gray-900")
+  //         //   document.getElementById("About-Us").classList.remove("text-white")
+
+  //         //   document.getElementById("About-Us").classList.add("text-gray-300")
+  //         //   document.getElementById("About-Us").classList.add("hover:bg-gray-700")
+  //         //   document.getElementById("About-Us").classList.add("hover:text-white")
+  //       }
+  //     }
+  //     // { threshold: 0.75, rootMargin: "0px 0px 50% 0px" }
+  //   )
+  //   observer.observe(myRef.current)
+  // }, [])
+
   return (
-    <section id="About-Us" className="bg-stone-100 text-gray-600 body-font">
+    <section
+      ref={myRef}
+      id="About-Us"
+      className="bg-stone-100 text-gray-600 body-font"
+    >
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
           <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">

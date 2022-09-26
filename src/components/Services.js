@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react"
 import { useTranslation } from "react-i18next"
 
 export default function Services() {
@@ -61,8 +62,40 @@ export default function Services() {
     }
   ]
 
+  const myRef = useRef()
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       const entry = entries[0]
+  //       if (entry.isIntersecting) {
+  //         console.log(entry.target.id, entry.isIntersecting)
+
+  //         //   document.getElementById("Services").classList.remove("text-gray-300")
+  //         //   document
+  //         //     .getElementById("Services")
+  //         //     .classList.remove("hover:bg-gray-700")
+  //         //   document
+  //         //     .getElementById("Services")
+  //         //     .classList.remove("hover:text-white")
+
+  //         //   document.getElementById("Services").classList.add("bg-gray-900")
+  //         //   document.getElementById("Services").classList.add("text-white")
+  //         // } else {
+  //         //   document.getElementById("Services").classList.remove("bg-gray-900")
+  //         //   document.getElementById("Services").classList.remove("text-white")
+
+  //         //   document.getElementById("Services").classList.add("text-gray-300")
+  //         //   document.getElementById("Services").classList.add("hover:bg-gray-700")
+  //         //   document.getElementById("Services").classList.add("hover:text-white")
+  //       }
+  //     }
+  //     // { threshold: 0.75, rootMargin: "0px 0px 50% 0px" }
+  //   )
+  //   observer.observe(myRef.current)
+  // }, [])
+
   return (
-    <section id="Services" className="bg-stone-100 scroll-mt-16">
+    <section ref={myRef} id="Services" className="bg-stone-100 scroll-mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl pt-4 pb-10 lg:max-w-none ">
           <h2 className="text-2xl font-bold text-gray-900">{t("title")}</h2>

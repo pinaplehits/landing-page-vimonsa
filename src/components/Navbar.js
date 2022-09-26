@@ -18,15 +18,30 @@ export default function Navbar() {
   }
 
   const [navigation, setNavigation] = useState([
-    { name: t("nav-item-1"), href: "#", current: true },
-    { name: t("nav-item-2"), href: "#Overview", current: false },
-    { name: t("nav-item-3"), href: "#Services", current: false },
-    { name: t("nav-item-4"), href: "#About-Us", current: false },
-    { name: t("nav-item-5"), href: "#Contact", current: false }
+    { id: "Header", name: t("nav-item-1"), href: "#", current: false },
+    {
+      id: "Overview",
+      name: t("nav-item-2"),
+      href: "#Overview",
+      current: false
+    },
+    {
+      id: "Services",
+      name: t("nav-item-3"),
+      href: "#Services",
+      current: false
+    },
+    {
+      id: "About-Us",
+      name: t("nav-item-4"),
+      href: "#About-Us",
+      current: false
+    },
+    { id: "Contact", name: t("nav-item-5"), href: "#Contact", current: false }
   ])
 
   return (
-    <Disclosure as="nav" className="sticky top-0 z-20 bg-gray-800">
+    <Disclosure as="nav" className="sticky top-0 z-20 bg-gray-800" id="navbar">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -59,31 +74,32 @@ export default function Navbar() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
+                        id={item.id}
                         key={item.name}
                         href={item.href}
-                        onClick={() => {
-                          setNavigation(
-                            navigation.map((nav) => {
-                              if (nav.name === item.name) {
-                                nav.current = true
-                              }
+                        // onClick={() => {
+                        //   setNavigation(
+                        //     navigation.map((nav) => {
+                        //       if (nav.name === item.name) {
+                        //         nav.current = true
+                        //       }
 
-                              if (nav.name !== item.name) {
-                                nav.current = false
-                              }
-                              return nav
-                            })
-                          )
-                          console.clear()
-                          console.log(navigation)
-                        }}
+                        //       if (nav.name !== item.name) {
+                        //         nav.current = false
+                        //       }
+                        //       return nav
+                        //     })
+                        //   )
+                        //   console.clear()
+                        //   console.log(navigation)
+                        // }}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        // aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
                       </a>
@@ -166,20 +182,20 @@ export default function Navbar() {
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  onClick={() => {
-                    setNavigation(
-                      navigation.map((nav) => {
-                        if (nav.name === item.name) {
-                          nav.current = true
-                        }
+                  // onClick={() => {
+                  //   setNavigation(
+                  //     navigation.map((nav) => {
+                  //       if (nav.name === item.name) {
+                  //         nav.current = true
+                  //       }
 
-                        if (nav.name !== item.name) {
-                          nav.current = false
-                        }
-                        return nav
-                      })
-                    )
-                  }}
+                  //       if (nav.name !== item.name) {
+                  //         nav.current = false
+                  //       }
+                  //       return nav
+                  //     })
+                  //   )
+                  // }}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}

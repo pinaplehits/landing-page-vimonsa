@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { Dialog, Transition } from "@headlessui/react"
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useRef, useState } from "react"
 import emailjs from "emailjs-com"
 
 const initialState = {
@@ -55,8 +55,40 @@ export default function Contact() {
       )
   }
 
+  const myRef = useRef()
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       const entry = entries[0]
+  //       if (entry.isIntersecting) {
+  //         console.log(entry.target.id, entry.isIntersecting)
+
+  //         //   document.getElementById("Contact").classList.remove("text-gray-300")
+  //         //   document
+  //         //     .getElementById("Contact")
+  //         //     .classList.remove("hover:bg-gray-700")
+  //         //   document
+  //         //     .getElementById("Contact")
+  //         //     .classList.remove("hover:text-white")
+
+  //         //   document.getElementById("Contact").classList.add("bg-gray-900")
+  //         //   document.getElementById("Contact").classList.add("text-white")
+  //         // } else {
+  //         //   document.getElementById("Contact").classList.remove("bg-gray-900")
+  //         //   document.getElementById("Contact").classList.remove("text-white")
+
+  //         //   document.getElementById("Contact").classList.add("text-gray-300")
+  //         //   document.getElementById("Contact").classList.add("hover:bg-gray-700")
+  //         //   document.getElementById("Contact").classList.add("hover:text-white")
+  //       }
+  //     }
+  //     // { threshold: 1, rootMargin: "0px 0px 50% 0px" }
+  //   )
+  //   observer.observe(myRef.current)
+  // }, [])
+
   return (
-    <section id="Contact" className="bg-stone-100 py-6">
+    <section ref={myRef} id="Contact" className="bg-stone-100 py-6">
       <div className="max-w-5xl mt-10 mx-auto sm:mt-0">
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="mt-5 md:col-span-2 md:mt-0">
