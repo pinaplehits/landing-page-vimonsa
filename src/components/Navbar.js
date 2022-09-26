@@ -166,6 +166,20 @@ export default function Navbar() {
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
+                  onClick={() => {
+                    setNavigation(
+                      navigation.map((nav) => {
+                        if (nav.name === item.name) {
+                          nav.current = true
+                        }
+
+                        if (nav.name !== item.name) {
+                          nav.current = false
+                        }
+                        return nav
+                      })
+                    )
+                  }}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}

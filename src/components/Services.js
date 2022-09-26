@@ -62,7 +62,7 @@ export default function Services() {
   ]
 
   return (
-    <div id="Services" className="bg-stone-100 scroll-mt-16">
+    <section id="Services" className="bg-stone-100 scroll-mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl pt-4 pb-10 lg:max-w-none ">
           <h2 className="text-2xl font-bold text-gray-900">{t("title")}</h2>
@@ -90,6 +90,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

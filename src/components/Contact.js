@@ -56,7 +56,7 @@ export default function Contact() {
   }
 
   return (
-    <div id="Contact" className="bg-stone-100 py-6">
+    <section id="Contact" className="bg-stone-100 py-6">
       <div className="max-w-5xl mt-10 mx-auto sm:mt-0">
         <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="mt-5 md:col-span-2 md:mt-0">
@@ -290,6 +290,6 @@ export default function Contact() {
           </div>
         </Dialog>
       </Transition>
-    </div>
+    </section>
   )
 }
