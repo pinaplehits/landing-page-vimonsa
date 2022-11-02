@@ -6,6 +6,7 @@ import Fixture from "../assets/images/services/fixture.png"
 import PLC from "../assets/images/services/plc.png"
 import Electronic from "../assets/images/services/electronic.png"
 import RepairMold from "../assets/images/services/repair-mold.png"
+import AutoStation from "../assets/images/services/auto-station.png"
 
 export default function Services() {
   const { t } = useTranslation(null, { keyPrefix: "Services_lang" })
@@ -14,8 +15,7 @@ export default function Services() {
       id: 0,
       name: t("names.0"),
       description: t("descriptions.0"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg"
+      imageSrc: AutoStation
     },
     {
       id: 1,
