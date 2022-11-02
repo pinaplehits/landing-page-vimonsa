@@ -1,4 +1,11 @@
 import { useTranslation } from "react-i18next"
+import ManualStation from "../assets/images/services/manual-station.png"
+import Mold from "../assets/images/services/mold.png"
+import UI from "../assets/images/services/ui-design.png"
+import Fixture from "../assets/images/services/fixture.png"
+import PLC from "../assets/images/services/plc.png"
+import Electronic from "../assets/images/services/electronic.png"
+import RepairMold from "../assets/images/services/repair-mold.png"
 
 export default function Services() {
   const { t } = useTranslation(null, { keyPrefix: "Services_lang" })
@@ -14,50 +21,43 @@ export default function Services() {
       id: 1,
       name: t("names.1"),
       description: t("descriptions.1"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg"
+      imageSrc: ManualStation
     },
     {
       id: 2,
       name: t("names.2"),
       description: t("descriptions.2"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+      imageSrc: Fixture
     },
     {
       id: 3,
       name: t("names.3"),
       description: t("descriptions.3"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+      imageSrc: UI
     },
     {
       id: 4,
       name: t("names.4"),
       description: t("descriptions.4"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+      imageSrc: PLC
     },
     {
       id: 5,
       name: t("names.5"),
       description: t("descriptions.5"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+      imageSrc: Electronic
     },
     {
       id: 6,
       name: t("names.6"),
       description: t("descriptions.6"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+      imageSrc: Mold
     },
     {
       id: 7,
       name: t("names.7"),
       description: t("descriptions.7"),
-      imageSrc:
-        "https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg"
+      imageSrc: RepairMold
     }
   ]
 
